@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Whisper&family=Work+Sans:wght@400;500;700;800&display=swap');
+
+:root{
+    --red:#267698;
+    
+    
+}
+
+.primary{
+    color: var(--red);
+}
+
+/* navbar */
+.dot{
+    color: var(--red);
+}
+.navbar .navbar-nav .nav-item .nav-link.active,
+.navbar .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-nav .nav-item .nav-link:focus {
+    color: var(--red);
+}
+.navbar-brand{
+    letter-spacing: 2px;
+    font-weight: 600;
+    /* font-family: 'Lemon', serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Work Sans', sans-serif;
+}
+.navbar .navbar-toggler {
+    color: white;
+    border: 1px solid white;
+}
+
+/* navbar */
+
+/* slider */
+.slider img{
+    max-height: 650px;
+    min-height: 500px;
+    filter: brightness(40%); 
+    /* background: cover/center; */
+}
+
+.carousel-caption{
+    top: 40%;
+    bottom: 1rem;
+}
+/* slider */
+
+/*content  */
+.blog-post{
+    padding: 20px;
+    background-color: rgb(250, 248, 245);
+    margin-block: 1.5em;
+}
+.img-post{
+    width: 100%;
+    min-width: 100%;
+    height:300px;
+}
+.primary-btn{
+    background-color: var(--red) !important;
+    border-color:var(--red) !important;
+}
+.btn:hover{
+    color: var(--red) !important;
+    background-color: white !important;
+}
+
+.list{
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+.list li a::before{
+    content: "👉";
+    padding-right: 0.5rem;
+}
+.list li a:hover{
+    color: var(--red) !important;
+}
+/* content  */
+
+
+/*footer */
+
+.footer{
+    background-color: var(--red);
+    padding: 3em !important;
+    margin-bottom: 0 !important;
+}
+.footer >*, .footer a, .footer a:hover{
+    color: white !important;
+}
+/*footer */
+
+/*about  */
+.aboutt{
+    width: 100%;
+    padding: 70px;
+}
+.hd{
+    position: relative;
+}
+.hd h4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size:5rem ;
+    color: white;
+}
+.hd-img{
+    width: 100%;
+    height: 500px;
+    filter: brightness(40%);
+    background-position: center;
+}
+/*about  */
+
+
+
+/* blog */
+.pageTitle{
+    color: var(--red);
+}
+/* blog */

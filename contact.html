@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <a class="navbar-brand text-uppercase" href="#">travello <span class="dot fs-3">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active p-2 p-lg-3 text-uppercase" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3 text-uppercase" href="blogPost.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3 text-uppercase" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3 text-uppercase" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-link p-2 p-lg-3 disabled text-uppercase">
+                        soon
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contact">
+        <div class="container">
+            <header class="hd lh-l">
+                <img src="images/contact.jpg" alt="" class="hd-img">
+                <h4>Contact</h4>
+            </header>
+            <div class="txt py-4">
+                <h3>Hi, Contact Us</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">User Name</label>
+                        <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1" name="user"
+                            placeholder="Enter your name" onfocus="bgc(this) " onblur="bgc(this),validateN(this)">
+                            <span id="span2"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" onblur="pass(this)">
+                        <span id="span1"></span>
+                        <div id="emailHelp" class="form-text text-black-50 pt-2">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>                    </div>
+                    
+                    <button type="submit" class="btn btn-primary primary-btn">Submit</button>
+                </form>
+    
+            </div>
+        </div>
+    
+    </section>
+
+
+
+
+
+    <div class="model">
+        <div class="modal fade" id="adminLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Admin Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="./post.html">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">User Name</label>
+                                <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1"
+                                    name="user" placeholder="Enter your name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Password</label>
+                                <input type="password" class="form-control form-control-lg" id="exampleFormControlInput1"
+                                    name="pass" placeholder="your password">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary primary-btn rounded-pill">Login</button>
+                            </div>
+                        </form>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer mt-5 py-4">
+        <ul class="nav justify-content-center border-bottom mb-3 pb-3">
+            <li class="nav-item text-uppercase"><a href="index.html" class="nav-link px-2">Home</a></li>
+                        <li class="nav-item text-uppercase"><a href="blogPost.html" class="nav-link px-2">News</a></li>
+
+            <li class="nav-item text-uppercase"><a href="about.html" class="nav-link px-2">About Us</a></li>
+            <li class="nav-item text-uppercase"><a href="contact.html" class="nav-link px-2">Contact</a></li>
+            <li class="nav-item text-uppercase"><a href="#" id="admin" data-bs-target="#adminLogin"
+                    class="nav-link px-2" data-bs-toggle="modal">Admin</a></li>
+        </ul>
+        <p class="text-white-50 text-center">@
+            <script>document.write(new Date().getFullYear())</script> Ultra, DOHA
+        </p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
